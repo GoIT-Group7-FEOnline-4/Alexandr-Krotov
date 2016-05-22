@@ -1,0 +1,196 @@
+body {
+  background: url('../img/bg.jpg') repeat-x;
+  font: 15px Tahoma, Verdana, sans-serif;
+}
+
+.clearfix {
+  height: 1px;
+  clear: both;
+}
+
+.wrap {
+  width: 1000px;
+  height: 988px;
+  margin: 38px auto;
+  margin-bottom: 0;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, .5), -3px -3px 5px rgba(0, 0, 0, .5);
+}
+
+/*HEADER
+==========*/
+
+header {
+  height: 175px;
+  padding: 0 28px;
+  color: #128aa7;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.logo {
+  margin-top: 8px;
+  margin-right: 270px;
+  float: left;
+}
+
+.contact {
+  margin-bottom: 55px;
+  float: right;
+}
+
+.icon-bar {
+  width: 390px;
+  float: right;
+  text-align: center;
+}
+
+.icon-bar li {
+  display: inline-block;
+  width: 60px;
+  height: 42px;
+}
+
+.icon-bar li p {
+  color: #128aa7;
+  font-size: 10px;
+  text-decoration: underline;
+}
+
+.icon-bar a:hover > p {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*PHOTO
+==========*/
+
+.photo {
+  width: 1000px;
+  height: 237px;
+  border: 2px solid #128aa7;
+  overflow: hidden;
+}
+
+/*MENU
+==========*/
+
+.menu {
+  display: block;
+  width: 1000px;
+  background-color: #303030;
+  font-size: 13px;
+}
+
+ul::after {
+  display: block;
+  float: none;
+  clear: both;
+  content: ' ';
+}
+
+.menu > li {
+  position: relative;
+  margin-right: 50px;
+  float: left;
+}
+
+.menu > li:last-child {
+  margin-right: 0;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 10px;
+  background-color: #303030;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu > li  a:hover {
+  color: #108eae;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  width: 125px;
+  background-color: #303030;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .75);
+}
+
+.submenu-trips {
+  left: -8px;
+}
+
+.submenu-services {
+  left: -29px;
+}
+
+.submenu-partners {
+  left: -14px;
+}
+
+.submenu li {
+  height: 38px;
+}
+
+.submenu a {
+  color: #fff;
+}
+
+.menu > li:hover > .submenu {
+  display: block;
+}
+
+.menu > .triangle > a::after {
+  position: absolute;
+  border-width: 6px 3px 0;
+  border-style: solid;
+  border-color: #fff transparent transparent;
+  content: '';
+}
+
+.triangle-trips  > a::after {
+  top: 15px;
+  left: 98px;
+}
+
+.triangle-services  > a::after {
+  top: 15px;
+  left: 57px;
+}
+
+.triangle-partners  > a::after {
+  top: 15px;
+  left: 86px;
+}
+
+/*CONTENT
+==========*/
+
+.content-aside {
+  display: block;
+  width: 200px;
+  height: 536px;
+  background-color: rgba(0, 0, 0, .1);
+  text-align: center;
+}
+
+.content-aside-left {
+  float: left;
+}
+
+.content-aside-right {
+  float: right;
+}
+
+/*FOOTER
+==========*/
+
+footer {
+  color: #fff;
+  text-align: center;
+}
