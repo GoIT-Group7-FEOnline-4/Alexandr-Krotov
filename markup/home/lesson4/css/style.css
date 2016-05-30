@@ -77,7 +77,7 @@ header {
 ==========*/
 
 .photo {
-  width: auto;
+  width: 100%;
   height: 237px;
   /*border: 1px solid #128aa7;*/
   overflow: hidden;
