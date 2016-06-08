@@ -95,7 +95,7 @@ header {
   position: relative;
   flex-flow: row wrap;
   justify-content: space-around;
-  width: 944px;
+  width: 945px;
   height: 34px;
   padding: 0 28px;
   background-color: #303030;
@@ -120,24 +120,24 @@ header {
 .submenu {
   display: none;
   position: absolute;
-  width: auto;
+  width: 150px;
   height: 125px;
   background-color: #303030;
   color: #fff;
   text-align: center;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .75);
+  box-shadow: 0 46px 5px rgba(0, 0, 0, .75);
 }
 
 .submenu-trips {
-  left: 181px;
+  left: 157px;
 }
 
 .submenu-services {
-  left: 335px;
+  left: 289px;
 }
 
 .submenu-partners {
-  left: 448px;
+  left: 414px;
 }
 
 .submenu a {
