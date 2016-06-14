@@ -6,7 +6,7 @@ body {
 }
 
 /*HEADER
-==========*/
+============*/
 
 .header {
   display: flex;
@@ -113,6 +113,8 @@ body {
   font-size: 24px;
 }
 
+/*FB
+==========*/
 .fb {
   display: flex;
   margin-top: 36px;
@@ -157,6 +159,8 @@ body {
   font-size: 16px;
   font-weight: bolder;
 }
+/*FB END
+---------------*/
 
 .ou {
   display: flex;
@@ -178,6 +182,8 @@ body {
   border-bottom: 1px solid #000;
 }
 
+/*FORM
+==============*/
 input {
   display: block;
   border: 0;
@@ -238,6 +244,8 @@ input {
   color: #eee;
   line-height: 36px;
 }
+/*FORM END
+-------------------*/
 
 .sub-footer {
   margin-top: 18px;
