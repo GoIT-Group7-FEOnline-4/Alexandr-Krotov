@@ -32,7 +32,7 @@ address {
   align-items: center;
   margin-top: 8px;
   color: #5e696d;
-  font-size: 18.1px;
+  font-size: 18px;
   font-style: normal;
   line-height: 25px;
 }
@@ -60,7 +60,7 @@ address img {
   background: -webkit-linear-gradient(top, #1f6787, #0c3357);
   font-family: 'Lucida Sans Unicode';
   line-height: 25px;
-  box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, .75);
+  box-shadow: 2px 3px 3px rgba(150, 150, 150, .75);
 }
 
 .login img {
@@ -158,7 +158,7 @@ nav {
   border-radius: 4px;
   background: linear-gradient(to top, #000 0%, #576068 100%);
   color: #b1bcc0;
-  box-shadow: 1.5px 2.6px 5px rgba(0, 0, 0, .75);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, .75);
 }
 
 .menu ul {
@@ -228,7 +228,7 @@ nav {
   margin-top: 12px;
   border: 1px solid #c4c4c4;
   border-radius: 17px;
-  box-shadow: 2.6px 4.3px 5px rgba(104, 104, 104, .75);
+  box-shadow: 3px 4px 5px rgba(104, 104, 104, .75);
 }
 
 .filter-by-car {
@@ -293,12 +293,12 @@ nav {
 
 .w100 {
   width: 100px;
-  box-shadow: inset .5px .9px 1px rgba(0, 0, 0, .75);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .75);
 }
 
 .w57 {
   width: 57px;
-  box-shadow: inset .5px .9px 1px rgba(0, 0, 0, .75);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .75);
 }
 
 .search {
@@ -433,7 +433,7 @@ nav {
   font-size: 13px;
   line-height: 26px;
   text-align: center;
-  box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, .75);
+  box-shadow: 2px 3px 3px rgba(150, 150, 150, .75);
 }
 
 .catalog-header span {
@@ -455,9 +455,10 @@ nav {
   padding: 0;
   color: #465961;
   list-style-image: url('../img/smallmarker.png');
+  list-style-position: inside;
 }
 
-.catalog ul ul li {
+.catalog-value li {
   position: relative;
   top: 4px;
   left: 10px;
@@ -482,9 +483,9 @@ nav {
   text-decoration: underline;
 }
 
-.catalog ul ul li:hover {
+.catalog-value li:hover {
   margin-left: 9px;
-  list-style-image: url('../img/hoversmallmarker.png');
+  list-style-image:  url('../img/hoversmallmarker.png');
 }
 
 .catalog-sub-head {
@@ -650,7 +651,7 @@ main span {
   border: 1px solid #114165;
   border-radius: 2px;
   background-color: #fff;
-  box-shadow: inset .5px .9px 1px;
+  box-shadow: inset 1px 1px 1px;
   content: '';
 }
 
