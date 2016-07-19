@@ -1,27 +1,30 @@
 body {
   background: url('../img/bg.jpg') repeat-x;
+  background-color: #0c739f;
+  background-size: 1051px;
   font: 15px Tahoma, Verdana, sans-serif;
 }
 
-.clearfix {
-  height: 1px;
+.clearfix:after {
+  display: block;
   clear: both;
+  content: '';
 }
 
 .wrap {
   width: 1000px;
   height: 988px;
-  margin: 38px auto;
+  margin: 0 auto;
   margin-bottom: 0;
   background-color: #fff;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, .5), -3px -3px 5px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, .4);
 }
 
 /*HEADER
 ==========*/
 
 header {
-  height: 175px;
+  height: 177px;
   padding: 0 28px;
   color: #128aa7;
   font-size: 12px;
@@ -29,25 +32,32 @@ header {
 }
 
 .logo {
-  margin-top: 8px;
+  margin-top: 11px;
   margin-right: 270px;
   float: left;
 }
 
 .contact {
-  margin-bottom: 55px;
+  margin-top: 5px;
+  margin-bottom: 45px;
   float: right;
 }
 
+.contact p {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
 .icon-bar {
-  width: 390px;
+  width: 345px;
   float: right;
   text-align: center;
+  overflow: hidden;
 }
 
 .icon-bar li {
   display: inline-block;
-  width: 60px;
+  width: 54px;
   height: 42px;
 }
 
@@ -58,6 +68,7 @@ header {
 }
 
 .icon-bar a:hover > p {
+  font-size: 9px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -66,117 +77,115 @@ header {
 ==========*/
 
 .photo {
-  width: 1000px;
+  width: 100%;
   height: 237px;
-  border: 2px solid #128aa7;
+  /*border: 1px solid #128aa7;*/
   overflow: hidden;
+}
+
+.photo img {
+  max-width: 100%;
 }
 
 /*MENU
 ==========*/
 
 .menu {
-  display: block;
-  width: 1000px;
-  background-color: #303030;
-  font-size: 13px;
-}
-
-ul::after {
-  display: block;
-  float: none;
-  clear: both;
-  content: ' ';
-}
-
-.menu > li {
+  display: flex;
   position: relative;
-  margin-right: 50px;
-  float: left;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 945px;
+  height: 34px;
+  padding: 0 28px;
+  background-color: #303030;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
 }
 
-.menu > li:last-child {
-  margin-right: 0;
-}
-
-.menu > li > a {
+.menu-link {
   display: block;
-  padding: 10px;
+  width: auto;
+  height: 34px;
   background-color: #303030;
   color: #fff;
   text-decoration: none;
 }
 
-.menu > li  a:hover {
+.menu-link:hover {
   color: #108eae;
 }
 
 .submenu {
   display: none;
   position: absolute;
-  width: 125px;
+  width: 150px;
+  height: 125px;
   background-color: #303030;
   color: #fff;
   text-align: center;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .75);
+  box-shadow: 0 46px 5px rgba(0, 0, 0, .75);
 }
 
 .submenu-trips {
-  left: -8px;
+  left: 157px;
 }
 
 .submenu-services {
-  left: -29px;
+  left: 289px;
 }
 
 .submenu-partners {
-  left: -14px;
-}
-
-.submenu li {
-  height: 38px;
+  left: 414px;
 }
 
 .submenu a {
   color: #fff;
 }
 
-.menu > li:hover > .submenu {
+.menu > .block:hover .submenu {
   display: block;
 }
 
-.menu > .triangle > a::after {
+.triangle > a:after {
   position: absolute;
+  top: 15px;
   border-width: 6px 3px 0;
   border-style: solid;
   border-color: #fff transparent transparent;
   content: '';
 }
 
-.triangle-trips  > a::after {
-  top: 15px;
-  left: 98px;
+.triangle-trips  > a:after {
+  left: 270px;
 }
 
-.triangle-services  > a::after {
-  top: 15px;
-  left: 57px;
+.triangle-services  > a:after {
+  left: 382px;
 }
 
-.triangle-partners  > a::after {
-  top: 15px;
-  left: 86px;
+.triangle-partners  > a:after {
+  left: 522px;
 }
 
 /*CONTENT
 ==========*/
+.content {
+  height: 536px;
+}
 
 .content-aside {
   display: block;
   width: 200px;
-  height: 536px;
+  height: 100%;
+  -webkit-background-color: rgba(0, 0, 0, .1);
   background-color: rgba(0, 0, 0, .1);
+  color: #424c43;
+  font-size: 14px;
+  line-height: 24px;
   text-align: center;
+  overflow: hidden;
 }
 
 .content-aside-left {
@@ -192,5 +201,7 @@ ul::after {
 
 footer {
   color: #fff;
+  font-size: 12px;
   text-align: center;
+  opacity: .8;
 }
